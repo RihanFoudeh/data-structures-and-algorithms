@@ -129,3 +129,59 @@ def test_insert_node_after_the_last_node():
     actual=List.__str__()
     expected='{1}-> {13}-> {2}-> {22}-> {3}-> {42}-> {4}-> {5}-> {6}-> {72}-> {7}-> {8}-> {9}-> {10}-> {93}-> NULL'
     assert actual == expected
+
+
+#########################################################################
+
+
+
+def test_k_greater_than_L_list_length():
+    lnk_lst=Linkedlist()
+    lnk_lst.insert(3)
+    lnk_lst.append(13)
+    lnk_lst.insertAfter(3,23)
+    excepted='Error! index out of range'
+    actual=lnk_lst.kthFromEnd(4)
+    assert excepted==actual
+
+#########################################################################
+
+def  test_k_and_length_of_list_the_same():
+    lnk_lst=Linkedlist()
+    lnk_lst.insert(3)
+    lnk_lst.append(13)
+    lnk_lst.insertAfter(3,23)
+    excepted='Error! index out of range'
+    actual=lnk_lst.kthFromEnd(3)
+    assert excepted==actual
+
+#########################################################################
+
+def test_k_not_positive_integer():
+    lnk_lst=Linkedlist()
+    lnk_lst.insert(3)
+    lnk_lst.append(13)
+    lnk_lst.insertAfter(3,23)
+    excepted="Error! k can't be negative number"
+    actual=lnk_lst.kthFromEnd(-3)
+    assert excepted==actual
+
+#########################################################################
+
+def test_linked_list_of_size_1():
+    lnk_lst=Linkedlist()
+    lnk_lst.insert(13)
+    excepted=13
+    actual=lnk_lst.kthFromEnd(0)
+    assert excepted==actual
+
+#########################################################################
+
+def test_happy_path():
+    lnk_lst=Linkedlist()
+    lnk_lst.insert(3)
+    lnk_lst.append(13)
+    lnk_lst.insertAfter(3, 23)
+    excepted=23
+    actual=lnk_lst.kthFromEnd(1)
+    assert excepted==actual

@@ -104,7 +104,23 @@ class Linkedlist:
             current.next = new_node
 
 
-
+    def kthFromEnd(self,k):
+        current=self.head
+        length=1
+        while current.next:
+            length+=1
+            current=current.next
+        current=self.head
+        if k>= length:
+            return 'Error! index out of range'
+        elif k<0:
+            return "Error! k can't be negative number"
+        else:
+            count =length-k-1
+            for i in range(length):
+                    if i == count:
+                        return current.value
+                    current =current.next
 
 if __name__ == "__main__":
 
@@ -115,12 +131,4 @@ if __name__ == "__main__":
         List.append(13)
         List.append(23)
 #########################################################################
-# if __name__ == "__main__":
 
-#         List =Linkedlist()
-#         List.insert(3)
-#         List.insert(3)
-#         List.append(7)
-#         List.append(13)
-#         List.append(23)
-#         print(List)
