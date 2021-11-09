@@ -1,6 +1,7 @@
 from linked_list import __version__
 
 from linked_list.linked_list import Linkedlist
+from linked_list.zipLists import zipLists
 
 def test_version():
     assert __version__ == '0.1.0'
@@ -185,3 +186,63 @@ def test_happy_path():
     excepted=23
     actual=lnk_lst.kthFromEnd(1)
     assert excepted==actual
+
+
+
+
+
+def test_zipLists_happy_path():
+    lnk_lst1=Linkedlist()
+    lnk_lst1.insert("L1 ,V1")
+    lnk_lst1.append("L1 ,V2")
+    lnk_lst1.append("L1 ,V3")
+    lnk_lst2=Linkedlist()
+    lnk_lst2.insert("L2 ,V1")
+    lnk_lst2.append("L2 ,V2")
+    lnk_lst2.append("L2 ,V3")
+    lnk_lst2.append("L2 ,V4")
+
+
+    actual=zipLists(lnk_lst1,lnk_lst2)
+    expected='{L1 ,V1}-> {L2 ,V1}-> {L1 ,V2}-> {L2 ,V2}-> {L1 ,V3}-> {L2 ,V3}-> {L2 ,V4}-> NULL'
+    assert expected==actual
+
+#########################################################################
+
+def test_zipLists_both_list_is_empty():
+    lnk_lst1=Linkedlist()
+
+    lnk_lst2=Linkedlist()
+
+    actual=zipLists(lnk_lst1,lnk_lst2)
+    expected= None
+    assert expected==actual
+
+#########################################################################
+
+def test_zipLists_first_list_is_empty():
+    lnk_lst1=Linkedlist()
+
+    lnk_lst2=Linkedlist()
+    lnk_lst2.insert("L2 ,V1")
+    lnk_lst2.append("L2 ,V2")
+    lnk_lst2.append("L2 ,V3")
+    lnk_lst2.append("L2 ,V4")
+
+    actual=zipLists(lnk_lst1,lnk_lst2)
+    expected='{L2 ,V1}-> {L2 ,V2}-> {L2 ,V3}-> {L2 ,V4}-> NULL'
+    assert expected==actual
+
+#########################################################################
+
+def test_zipLists_second_list_is_empty():
+    lnk_lst1=Linkedlist()
+    lnk_lst1.insert("L1 ,V1")
+    lnk_lst1.append("L1 ,V2")
+    lnk_lst1.append("L1 ,V3")
+
+    lnk_lst2=Linkedlist()
+
+    actual=zipLists(lnk_lst1,lnk_lst2)
+    expected='{L1 ,V1}-> {L1 ,V2}-> {L1 ,V3}-> NULL'
+    assert expected==actual
