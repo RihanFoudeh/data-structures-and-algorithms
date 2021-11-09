@@ -10,11 +10,6 @@ class Linkedlist:
 
 
 
-    # def insert(self, value):
-
-    #     if not self.head:
-    #         new_node = Node(value)
-    #         self.head = new_node
 
     def insert(self, value):
 
