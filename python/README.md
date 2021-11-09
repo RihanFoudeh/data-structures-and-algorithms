@@ -9,7 +9,7 @@
 | PR '1' > linked-list                           | [PR '1' > linked-list](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list)|
 | PR '2' > linked-list-insertions                | [PR '2' > linked-list-insertions](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-insertions)|
 | PR '3' > linked-list-kth                       | [PR '3' > linked-list-kth](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-kth)|
-| PR '4' > linked-list-zip                       | [PR '4' > linked-list-kth](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-zip)|
+| PR '4' > linked-list-zip                       | [PR '4' > linked-list-zip](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-zip)|
 
 
 
