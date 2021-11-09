@@ -9,6 +9,9 @@
 | PR '1' > linked-list                           | [PR '1' > linked-list](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list)|
 | PR '2' > linked-list-insertions                | [PR '2' > linked-list-insertions](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-insertions)|
 | PR '3' > linked-list-kth                       | [PR '3' > linked-list-kth](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-kth)|
+| PR '4' > linked-list-zip                       | [PR '4' > linked-list-kth](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/linked-list-zip)|
+
+
 
 # Challenge '1' :
 <!-- Description of the challenge -->
@@ -98,4 +101,31 @@
 * Where k is not a positive integer
 * Where the linked list is of a size 1
 * “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+<!-- ############################################################################################################################################### -->
+
+# Challenge '4'
+
+## Challenge Summary
+<!-- Description of the challenge -->
+* Write a function called zip lists
+* Arguments: 2 linked lists
+* Return: Linked List, zipped as noted below
+* Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+* Try and keep additional space down to O(1)
+* You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+### Whiteboard Process
+<!-- Embedded whiteboard image -->
+![linked-list-zip](https://user-images.githubusercontent.com/73611547/141009754-8510c304-8240-44f2-aa6e-152ad81cd959.jpg)
+
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+#### Write tests to prove the following functionality:
+
+* On this, and all future challenges, write tests for any cases that help you ensure your code is working as expected. Think through different edge cases to determine what tests will ensure your code is covered.
+
+
+
 
