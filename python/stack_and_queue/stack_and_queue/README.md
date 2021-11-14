@@ -5,7 +5,7 @@
 | Table Of Content                               | Links                                       |
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Stacks and Queues                     | [PR '1' > Stacks and Queues](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/18)|
-| PR '2' > stack-queue-pseudo                     | [PR '1' > Stacks and Queues](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/19)|
+| PR '2' > stack-queue-pseudo                     | [PR '2' > stack-queue-pseudo ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/19)|
 
 
 # Code Challenge: Class 10 : Stacks and Queues
@@ -59,7 +59,8 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![stack-queue-pseudo]()
+![stack-queue-pseudo](https://user-images.githubusercontent.com/73611547/141694217-e49e0ff8-794c-4eb3-8a66-ed9b40de161e.jpg)
+
    
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
