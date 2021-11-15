@@ -6,6 +6,8 @@
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Stacks and Queues                     | [PR '1' > Stacks and Queues](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/18)|
 | PR '2' > stack-queue-pseudo                     | [PR '2' > stack-queue-pseudo ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/19)|
+| PR '3' > stack-queue-animal-shelter                     | [PR '3' > stack-queue-animal-shelter ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/20)|
+
 
 
 # Code Challenge: Class 10 : Stacks and Queues
@@ -68,4 +70,18 @@
 
 ### enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach. dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach. The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
 
+# Code Challenge: Class 12 : Animal Shelter.
+<!-- Description of the challenge -->
+### First-in, First out Animal Shelter.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![stack_queue_animal_shelter](https://user-images.githubusercontent.com/73611547/141838681-12b60214-eedc-424f-89f5-73482244f262.jpg)
+
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* enqueue: time O(1) , space O (1)
+* dequeue: time O(n) , space O (1)
 
