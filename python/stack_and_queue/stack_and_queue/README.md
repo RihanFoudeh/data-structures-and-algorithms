@@ -7,6 +7,8 @@
 | PR '1' > Stacks and Queues                     | [PR '1' > Stacks and Queues](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/18)|
 | PR '2' > stack-queue-pseudo                     | [PR '2' > stack-queue-pseudo ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/19)|
 | PR '3' > stack-queue-animal-shelter                     | [PR '3' > stack-queue-animal-shelter ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/20)|
+| PR '4' > Multi-bracket Validation                    | [PR '4' > Multi-bracket Validation ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/21)|
+
 
 
 
@@ -84,4 +86,26 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 * enqueue: time O(1) , space O (1)
 * dequeue: time O(n) , space O (1)
+
+
+######################
+
+# Code Challenge: Class 13 : Multi-bracket Validation
+
+* Write a function called validate brackets
+* Arguments: string
+* Return: boolean
+  * representing whether or not the brackets in the string are balanced
+* There are 3 types of brackets:
+  * Round Brackets : `()`
+  * Square Brackets : `[]`
+  * Curly Brackets : `{}`
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![stack-queue-brackets](https://user-images.githubusercontent.com/73611547/142047363-1a5b4e43-f780-41a8-8506-96dd44006a09.jpg)
+
+<!-- ## Approach & Efficiency -->
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
 
