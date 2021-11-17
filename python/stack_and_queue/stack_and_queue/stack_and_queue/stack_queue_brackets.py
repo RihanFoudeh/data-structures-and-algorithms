@@ -1,5 +1,7 @@
+from stack_and_queue import Stack
+
 def validate_brackets(input):
-    List=[]
+    List=Stack()
 
     Round_open = input.count('(')
     Round_close = input.count(')')
@@ -15,13 +17,13 @@ def validate_brackets(input):
         for char in input:
 
             if char == '{' or char == '(' or char == '[':
-                List.append(char)
+                List.push(char)
 
             elif char == '}' or char == ')' or char == ']':
-                print(List)
+                # print(List)
 
                 element = List.pop()
-                print(List)
+                # print(List)
 
                 if not Compareing(element, char):
                     return False
@@ -46,9 +48,18 @@ def Compareing(opening, closing):
 
 
 
-""" if __name__=='__main__':
+if __name__=='__main__':
+
+    print(validate_brackets('{}'))
+    print(validate_brackets('{}(){}'))
+    print(validate_brackets('()[[Extra Characters]]'))
+    print(validate_brackets('(){}[[]]'))
+    print(validate_brackets('{}{Code}[Fellows](())'))
+    print(validate_brackets('[({}]'))
+    print(validate_brackets('(]('))
+    print(validate_brackets('{(})'))
 
 
-    print(validate_brackets('')) """
+
 
 
