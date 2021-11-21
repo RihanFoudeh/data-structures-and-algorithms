@@ -5,6 +5,8 @@
 | Table Of Content                               | Links                                       |
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Trees                                 | [PR '1' > Trees](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/22)|
+| PR '2' > tree-max                                 | [PR '2' > tree-max](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/23)|
+
 
 <!-- Short summary or background information -->
 ## Trees Summary
@@ -56,4 +58,30 @@
 * Post order: method that return tree in order `< left=> right=> root >`
 * Add: to add a value to a tree by binary search algorithm
 * Contains: to check if the tree contains a value
+
+
+# Challenge Summary : Code Challenge: Class 16 : Find the Maximum Value in a Binary Tree
+<!-- Description of the challenge -->
+
+### Feature Tasks
+
+#### Write the following method for the Binary Tree class
+
+* find maximum value
+  * Arguments: none
+  * Returns: number
+
+#### Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![tree-max](https://user-images.githubusercontent.com/73611547/142763894-42026c8b-83d6-455e-970c-6be6b5b5973f.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* max: time `O(n)`, space `O(1)`
+
+## API
+
+* max: method that return max value in tree
 
