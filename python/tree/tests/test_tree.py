@@ -4,8 +4,7 @@ from tree import __version__
 def test_version():
     assert __version__ == '0.1.0'
 
-from tree.trees import Binary_Search_Tree ,Node
-
+from tree.trees import Binary_Search_Tree ,Node,Binary_Tree
 
 #################################################################################
 
@@ -92,3 +91,30 @@ def test_max_val():
     actual=tree.max()
     expected=11
     assert actual==expected
+#######################################################################################
+
+
+
+
+def test_breadth_first():
+    tree = Binary_Tree()
+    tree.root=Node(2)
+
+    tree.root.left=Node(7)
+    tree.root.right=Node(5)
+
+    tree.root.left.left=Node(2)
+    tree.root.left.right=Node(6)
+
+    tree.root.right.right=Node(9)
+
+    tree.root.left.right.left=Node(5)
+    tree.root.left.right.right=Node(11)
+
+
+    tree.root.right.right.left=Node(4)
+
+    actual = tree.breadth_first()
+    expected = [2,7,5,2,6,9,5,11,4]
+
+    assert actual == expected

@@ -117,18 +117,18 @@ class Binary_Tree:
 
             return "Error in Post Order"
 
-
   ###############################################
 
     def max(self):
 
         if not self.root:
-                return "Tree is Empty"
+            return "Tree is Empty"
 
-        self.max=self.root.value
+        self.max = self.root.value
+
         def tree(node):
-            if node.value>self.max:
-                self.max=node.value
+            if node.value > self.max:
+                self.max = node.value
             if node.left:
                 tree(node.left)
             if node.right:
@@ -137,46 +137,49 @@ class Binary_Tree:
 
         return tree(self.root)
 
+    ###############################################
+
+    def breadth_first(self):
+        arr_nodes = [self.root]
+        result = []
+
+        if not arr_nodes[0]:
+            return 'an Empty Tree'
+
+        while arr_nodes:
+            node = arr_nodes[0]
+            if node.left:
+                arr_nodes.append(node.left)
+            if node.right:
+                arr_nodes.append(node.right)
+            result.append(arr_nodes[0].value)
+            arr_nodes = arr_nodes[1:]
+
+        return result
+
 ##############################################################################################
 
 
 class Binary_Search_Tree(Binary_Tree):
-
     def add(self, value):
         '''add value to binery tree '''
-
         if self.root == None:
-
             self.root = Node(value)
-
         else:
-
             current = self.root
-
             while current:
-
                 if value < current.value:
-
                     if current.left == None:
-
                         current.left = Node(value)
-
                         break
-
                     current = current.left
-
                 else:
-
                     if current.right == None:
-
                         current.right = Node(value)
-
                         break
-
                     current = current.right
 
     ###############################################
-
     def Contains(self, value):
         if self.root == None:
             return 'Tree is Empty'
@@ -196,25 +199,18 @@ class Binary_Search_Tree(Binary_Tree):
                     current = current.right
 
 
-##############################################################################################
-
-
-
+###############################################
 
 
 if __name__ == '__main__':
-    tree=Binary_Search_Tree()
-    tree.root=Node(2)
-    tree.root.left=Node(7)
-    tree.root.left.left=Node(2)
-    tree.root.left.right=Node(6)
-    tree.root.left.right.left=Node(5)
-    tree.root.left.right.right=Node(11)
-
-    tree.root.right=Node(5)
-    tree.root.right.right=Node(9)
-    tree.root.right.right.left=Node(4)
-
-    actual=tree.max()
-
-    print(actual)
+    tree = Binary_Tree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.right.right = Node(9)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right.left = Node(4)
+    print(tree.breadth_first())
