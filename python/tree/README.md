@@ -6,6 +6,8 @@
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Trees                                 | [PR '1' > Trees](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/22)|
 | PR '2' > tree-max                                 | [PR '2' > tree-max](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/23)|
+| PR '3' > tree-breadth-first                                 | [PR '3' > tree-breadth-first](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/24)|
+
 
 
 <!-- Short summary or background information -->
@@ -85,3 +87,21 @@
 
 * max: method that return max value in tree
 
+# Challenge Summary : Code Challenge: Class 17 : Breadth-first Traversal.
+<!-- Description of the challenge -->
+### Feature Tasks
+
+* Write a function called breadth first
+* Arguments: tree
+* Return: list of all values in the tree, in the order they were encountered
+
+#### `NOTE: Traverse the input tree using a Breadth-first approach`
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![tree-breadth-first](https://user-images.githubusercontent.com/73611547/142897728-0fb0ca84-4c58-4245-b5e4-5dbab4f679dd.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* Time : `O(n)`
+* Space: `O(n)`
