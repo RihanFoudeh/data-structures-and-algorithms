@@ -4,43 +4,33 @@ class Node:
         self.next=None
 ####################################################################
 class Stack:
+
     def __init__(self):
         self.top = None
-    def push(self,value):
+
+    def push(self, value):
         node = Node(value)
         if self.top:
-          node.next = self.top
-          self.top = node
-        else :
-            self.top=node
+            node.next = self.top
+        self.top = node
     def pop(self):
-        try:
-            deleted_value= self.top.value
-            temp=self.top.next
-            self.top=temp
-            temp.next = None
-            return deleted_value
-        except:
-            return "This is empty stack"
-    def peek(self):
-        try:
-            return self.top.value
-        except:
-            return "This is empty stack"
-    def isEmpty (self):
-        if self.top == None :
-            return False
-        else:
-            return True
 
-    def __str__(self):
-        content=''
-        current = self.top
-        while current:
-            content+= f"{{{str(current.value)}}} -> "
-            current=current.next
-        content+=" Null"
-        return content
+        if self.is_empty():
+            raise Exception("This stack is empty")
+        temp = self.top
+        self.top = self.top.next
+        temp.next = None
+        return temp.value
+
+    def peek(self):
+
+
+        if self.is_empty():
+            raise Exception("This stack is empty")
+        return self.top.value
+    def is_empty(self):
+        return self.top == None
+
 
 ####################################################################
 
