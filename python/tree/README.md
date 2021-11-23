@@ -7,6 +7,8 @@
 | PR '1' > Trees                                 | [PR '1' > Trees](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/22)|
 | PR '2' > tree-max                                 | [PR '2' > tree-max](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/23)|
 | PR '3' > tree-breadth-first                                 | [PR '3' > tree-breadth-first](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/tree-breadth-first/python/tree)|
+| PR '4' > tree-fizz-buzz                                | [PR '4' > tree-fizz-buzz](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/25)|
+
 
 
 
@@ -100,6 +102,31 @@
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![tree-breadth-first](https://user-images.githubusercontent.com/73611547/142897728-0fb0ca84-4c58-4245-b5e4-5dbab4f679dd.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* Time : `O(n)`
+* Space: `O(n)`
+
+
+# Challenge Summary :  Code Challenge: Class 18 : Fizz Buzz Tree
+<!-- Description of the challenge -->
+### Feature Tasks
+
+* Write a function called fizz buzz tree
+* Arguments: k-ary tree
+* Return: new k-ary tree
+
+#### Determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+* If the value is divisible by 3, replace the value with “Fizz”
+* If the value is divisible by 5, replace the value with “Buzz”
+* If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+* If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![tree-fizz-buzz](https://user-images.githubusercontent.com/73611547/143091961-fafc41cb-343c-423a-bf1d-475b730d1107.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
