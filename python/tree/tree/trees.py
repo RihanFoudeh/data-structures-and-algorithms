@@ -1,3 +1,5 @@
+from tree.queue import Queue
+
 class Node:
 
     def __init__(self, value):
@@ -139,23 +141,24 @@ class Binary_Tree:
 
     ###############################################
 
-    def breadth_first(self):
-        arr_nodes = [self.root]
-        result = []
+    def breadth_first(tree):
+        queue1=Queue()
+        final_output = []
 
-        if not arr_nodes[0]:
-            return 'an Empty Tree'
+        if  tree.root:
+                queue1.enqueue(tree.root)
+        else:
+            return "there is no root "
 
-        while arr_nodes:
-            node = arr_nodes[0]
-            if node.left:
-                arr_nodes.append(node.left)
-            if node.right:
-                arr_nodes.append(node.right)
-            result.append(arr_nodes[0].value)
-            arr_nodes = arr_nodes[1:]
+        while not queue1.is_empty():
+            front=queue1.dequeue()
+            final_output.append(front.value)
 
-        return result
+            if front.left :
+                    queue1.enqueue(front.left)
+            if front.right :
+                    queue1.enqueue(front.right)
+        return final_output
 
 ##############################################################################################
 

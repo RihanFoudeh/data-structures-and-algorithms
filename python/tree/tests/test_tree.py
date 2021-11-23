@@ -6,6 +6,8 @@ def test_version():
 
 from tree.trees import Binary_Search_Tree ,Node,Binary_Tree
 
+# from tree.trees import breadth_first
+
 #################################################################################
 
 
@@ -118,3 +120,13 @@ def test_breadth_first():
     expected = [2,7,5,2,6,9,5,11,4]
 
     assert actual == expected
+
+
+
+
+
+
+
+def test_empty_breadth_first():
+    tree2=Binary_Tree()
+    assert Binary_Tree.breadth_first(tree2)=='there is no root '
