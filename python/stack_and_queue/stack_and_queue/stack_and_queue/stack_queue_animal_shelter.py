@@ -72,7 +72,10 @@ class AnimalShelter:
         else:
             return True
 
-
+# class Cat :
+#     def __init(self,nickname):
+#         self.nickname=nickname
+#         self
 
 
 
