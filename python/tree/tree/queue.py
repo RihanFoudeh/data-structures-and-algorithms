@@ -37,7 +37,7 @@ class Queue():
         to remove an item from the front
         """
 
-        if self.is_empty():
+        if self.isEmpty():
             raise Exception("The queue is empty")
         if self.rear==self.front:
             temp = self.front
@@ -54,16 +54,26 @@ class Queue():
         to know the front
         """
 
-        if self.is_empty():
+        if self.isEmpty():
             raise Exception("The queue is empty")
 
         return self.front.value
 
-    def is_empty(self):
+    def isEmpty(self):
         """
         To check if the stack is empty or not
         """
         return self.front == None and  self.rear==None
+
+
+    def __str__(self):
+            content=''
+            current = self.rear
+            content+="Null"
+            while current:
+                content+= f"-> {{{str(current.value)}}}"
+                current=current.next
+            return content
 
 
 if __name__ == '__main__':
