@@ -6,7 +6,7 @@
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Trees                                 | [PR '1' > Trees](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/22)|
 | PR '2' > tree-max                                 | [PR '2' > tree-max](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/23)|
-| PR '3' > tree-breadth-first                                 | [PR '3' > tree-breadth-first](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/24)|
+| PR '3' > tree-breadth-first                                 | [PR '3' > tree-breadth-first](https://github.com/RihanFoudeh/data-structures-and-algorithms/tree/tree-breadth-first/python/tree)|
 
 
 
