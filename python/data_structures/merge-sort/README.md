@@ -1,6 +1,15 @@
 # Challenge Summary
 <!-- Description of the challenge -->
 ### Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+
+
+# PR Description Section :
+
+| Table Of Content                               | Links                                       |
+| ---------------------------------------------- | ------------------------------------------- |
+| PR '1' > merge-sort                        | [PR '1' > merge-sort  ](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/27)|
+
+
 ```py
 ALGORITHM Mergesort(arr)
     DECLARE n <-- arr.length
