@@ -7,7 +7,7 @@
 | Table Of Content                               | Links                                       |
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Implement Hashtable                   | [PR '1' > Hashtable](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
-| PR '2' > hashmap-repeated-word                   | [PR '1' > hashmap-repeated-word](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/30)|
+| PR '2' > hashmap-repeated-word                   | [PR '2' > hashmap-repeated-word](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/30)|
 
 
 
@@ -53,7 +53,8 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![hashmap-repeated-word]()
+![hashmap-repeated-word (1)](https://user-images.githubusercontent.com/73611547/145722398-decabd15-7af3-4936-8445-4c7f682b3927.jpg)
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
