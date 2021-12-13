@@ -8,6 +8,8 @@
 | ---------------------------------------------- | ------------------------------------------- |
 | PR '1' > Implement Hashtable                   | [PR '1' > Hashtable](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
 | PR '2' > hashmap-repeated-word                   | [PR '2' > hashmap-repeated-word](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/30)|
+| PR '3' > Hashmap Tree Intersection                   | [PR '3' > Hashmap Tree Intersection](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/31)|
+
 
 
 
@@ -17,17 +19,17 @@
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-* add: 
+* add:
     - time `O(1)`
     - space `O(1)`
 * get:
-    - time `O(1)` 
+    - time `O(1)`
     - space `O(1)`
-* contains: 
-    - time `O(1)` 
+* contains:
+    - time `O(1)`
     - space `O(1)`
-* hash: 
-    - time `O(n)` 
+* hash:
+    - time `O(n)`
     - space `O(1)`
 
 ## API
@@ -60,3 +62,24 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 * time `O(n)`
 * space `O(1)`
+
+
+# Challenge Summary - Code Challenge: Class 32 - Hashmap Tree Intersection
+<!-- Description of the challenge -->
+## Feature Tasks
+
+### Find all values found to be in 2 binary trees
+
+* Write a function called tree intersection
+* Arguments: two binary trees
+* Return: array
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![hashmap-tree-intersection ](assets/hashmap-tree-intersection.jpg)
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* time `O(2n)`
+* space `O(n)`

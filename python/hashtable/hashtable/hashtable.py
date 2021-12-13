@@ -9,10 +9,19 @@ class HashTable:
 
     def hash(self,key):
 
-        ascii_sum=0
-        for char in key:
-            ascii_sum+=ord(char)
-        return ascii_sum*11 % self.size
+        if type(key) == int:
+                    value = key
+        else:
+            value = sum([ord(char) for char in key])
+
+        index = (value * 13) % self.size
+        return index
+
+
+
+
+
+
 
 
     def add(self, key, value):
