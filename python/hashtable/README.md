@@ -9,6 +9,7 @@
 | PR '1' > Implement Hashtable                   | [PR '1' > Hashtable](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
 | PR '2' > hashmap-repeated-word                   | [PR '2' > hashmap-repeated-word](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/30)|
 | PR '3' > Hashmap Tree Intersection                   | [PR '3' > Hashmap Tree Intersection](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/31)|
+| PR '4' > Hashmap LEFT JOIN                   | [PR '4' > Hashmap LEFT JOIN](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
 
 
 
@@ -83,3 +84,30 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 * time `O(2n)`
 * space `O(n)`
+
+
+# Challenge Summary - Code Challenge: Class 33 - Hashmap LEFT JOIN
+<!-- Short summary or background information -->
+### Implement a simplified LEFT JOIN for 2 Hashmaps
+
+## Challenge
+<!-- Description of the challenge -->
+### Write a function that LEFT JOINs two hashmaps into a single data structure
+
+* Write a function called left join
+* Arguments: two hash maps
+  * The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+  * The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+
+* Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* time `O(n^2)`
+* space `O(n)`
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![Hashmap LEFT JOIN  ](assets/HashmapLEFTJOIN.jpg)
+

@@ -18,12 +18,6 @@ class HashTable:
         return index
 
 
-
-
-
-
-
-
     def add(self, key, value):
 
 
