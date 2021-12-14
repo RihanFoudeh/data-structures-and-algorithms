@@ -9,7 +9,7 @@
 | PR '1' > Implement Hashtable                   | [PR '1' > Hashtable](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
 | PR '2' > hashmap-repeated-word                   | [PR '2' > hashmap-repeated-word](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/30)|
 | PR '3' > Hashmap Tree Intersection                   | [PR '3' > Hashmap Tree Intersection](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/31)|
-| PR '4' > Hashmap LEFT JOIN                   | [PR '4' > Hashmap LEFT JOIN](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/29)|
+| PR '4' > Hashmap LEFT JOIN                   | [PR '4' > Hashmap LEFT JOIN](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/32)|
 
 
 
