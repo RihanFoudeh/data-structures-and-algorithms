@@ -6,7 +6,7 @@
 
 | Table Of Content              | Links                                                                                                |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
-| PR '1' > Graph Implementation | [PR '1' > Graph]() |
+| PR '1' > Graph Implementation | [PR '1' > Graph](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/33) |
 
 ## Challenge
 <!-- Description of the challenge -->
