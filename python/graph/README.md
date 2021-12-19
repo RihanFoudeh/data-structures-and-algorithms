@@ -6,7 +6,9 @@
 
 | Table Of Content              | Links                                                                                                |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
-| PR '1' > Graph Implementation | [PR '1' > Graph]() |
+| PR '1' > Graph Implementation | [PR '1' > Graph](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/33) |
+| PR '2' >  Breadth-First | [PR '2' >  Breadth-First](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/34) |
+
 
 ## Challenge
 <!-- Description of the challenge -->
@@ -64,3 +66,29 @@
 * `get nodes`: Returns all of the nodes in the graph as a collection (set, list, or similar)
 * `get neighbors`: Returns a collection of edges connected to the given node , Include the weight of the connection in the returned collection
 * `size`: Returns the total number of nodes in the graph
+
+
+
+
+
+# Challenge Summary - breadth-first
+<!-- Description of the challenge -->
+## Implement a breadth-first traversal on a graph.
+
+## Feature Tasks
+
+### Write the following method for the Graph class:
+
+* breadth first
+* Arguments: Node
+* Return: A collection of nodes in the order they were visited.
+* Display the collection
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![graph-breadth-first](assets/graph-breadth-first.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* time: `O(n^2)`
+* space: `O(n)`

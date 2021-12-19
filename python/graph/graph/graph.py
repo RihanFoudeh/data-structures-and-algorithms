@@ -1,12 +1,19 @@
+from graph.stack_and_queue import Stack, Queue
+
+
+################################################################################
+
 class Node():
 
     def __init__(self, value):
         self.value = value
 
+    #########################################################
 
     def __str__(self):
         return str(self.value)
 
+################################################################################
 
 
 class Edge():
@@ -14,6 +21,7 @@ class Edge():
         self.node = node
         self.weight = weight
 
+################################################################################
 
 
 class Graphs():
@@ -36,13 +44,7 @@ class Graphs():
     #########################################################
 
     def add_Edge(self, node1, node2, weight=1):
-        """
-        Adds a new edge between two nodes in the graph
-        If specified, assign a weight to the edge
-        Both nodes should already be in the Graph
-        Arguments: 2 nodes to be connected by the edge, weight (optional)
-        Returns: nothing
-        """
+
         if node1 and node2 in self._adjacency_list:
             self._adjacency_list[node1].append(Edge(node2, weight))
 
@@ -58,6 +60,13 @@ class Graphs():
         else:
             return 'null'
 
+        # list = []
+        # if self._adjacency_list.keys():
+        #     for node in self._adjacency_list.keys():
+        #         list.append(node.__str__())
+        #     return list
+        # else:
+        #     return 'NULL'
 
     #########################################################
 
@@ -86,8 +95,47 @@ class Graphs():
         for node in self._adjacency_list:
             str += f'[{node.value}] -> {self.get_neighbors(node)}\n'
 
+            # str += f'[{node.value}] -> '
+
+            # for edge in self._adjacency_list[node]:
+            #     str += f" ( {edge.node.value}, {edge.weight} ), "
+            # str += '\n'
 
         return str
+
+    #########################################################
+
+    def breadth_first(self, node):
+        """
+        Write the following method for the Graph class:
+        breadth first
+        Arguments: Node
+        Return: A collection of nodes in the order they were visited.
+        Display the collection
+        """
+        if node not in self._adjacency_list:
+            return 'Node does not in Graph'
+        elif self._adjacency_list[node]==[]:
+            return 'Node does not have neighbors'
+
+        breadth = Queue()
+        visited = []
+        nodes = []
+
+        breadth.enqueue(node)
+        visited.append(node)
+
+        while breadth.front:
+            front = breadth.dequeue()
+            nodes.append(front.value)
+
+            for child in self._adjacency_list[front]:
+
+                if child.node not in visited:
+                    visited.append(child.node)
+                    breadth.enqueue(child.node)
+
+        return nodes
 
 ################################################################################
 ################################################################################
@@ -131,5 +179,47 @@ if __name__ == "__main__":
 
     print("Str :")
     print(graph)
+
+    print("Breadt First:")
+    print(graph.breadth_first(node_a))
+    #########################################################
+
+    graph2 = Graphs()
+
+    pandora = graph2.add_node('Pandora')
+    arendelle = graph2.add_node('Arendelle')
+    metroville = graph2.add_node('Metroville')
+    monstroplolis = graph2.add_node('Monstroplolis')
+    narnia = graph2.add_node('Narnia')
+    naboo = graph2.add_node('Naboo')
+
+    fake = graph.add_node('Fake')
+    fake2 = graph2.add_node('Fake 2')
+
+    graph2.add_Edge(pandora, arendelle, 1)
+
+    graph2.add_Edge(arendelle, metroville, 1)
+    graph2.add_Edge(arendelle, monstroplolis, 1)
+
+    graph2.add_Edge(metroville, arendelle, 1)
+    graph2.add_Edge(metroville, monstroplolis, 1)
+    graph2.add_Edge(metroville, narnia, 1)
+    graph2.add_Edge(metroville, naboo, 1)
+
+
+    graph2.add_Edge(monstroplolis, arendelle, 1)
+    graph2.add_Edge(monstroplolis, metroville, 1)
+    graph2.add_Edge(monstroplolis, arendelle, 1)
+
+    graph2.add_Edge(narnia, metroville, 1)
+    graph2.add_Edge(narnia, naboo, 1)
+
+    graph2.add_Edge(naboo, monstroplolis, 1)
+    graph2.add_Edge(naboo, metroville, 1)
+    graph2.add_Edge(naboo, narnia, 1)
+
+
+    print("Breadt First:")
+    print(graph2.breadth_first(pandora))
 
 ################################################################################
