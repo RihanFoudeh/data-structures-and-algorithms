@@ -8,6 +8,7 @@
 | ----------------------------- | ---------------------------------------------------------------------------------------------------- |
 | PR '1' > Graph Implementation | [PR '1' > Graph](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/33) |
 | PR '2' >  Breadth-First | [PR '2' >  Breadth-First](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/34) |
+| PR '3' >  Graph Business Trip | [PR '3' >  Graph Business Trip](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/35) |
 
 
 ## Challenge
@@ -92,3 +93,25 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 * time: `O(n^2)`
 * space: `O(n)`
+
+
+# Challenge Summary - Graph Business Trip
+<!-- Description of the challenge -->
+## Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
+
+### Feature Tasks
+
+* Write a function called business trip
+* Arguments: graph, array of city names
+* Return: cost or null
+
+> Determine whether the trip is possible with direct flights, and how much it would cost.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![graph-business-trip](assets/graph-business-trip.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* time: `O(n^2)`
+* space: `O(1)`
