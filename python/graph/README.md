@@ -9,6 +9,8 @@
 | PR '1' > Graph Implementation | [PR '1' > Graph](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/33) |
 | PR '2' >  Breadth-First | [PR '2' >  Breadth-First](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/34) |
 | PR '3' >  Graph Business Trip | [PR '3' >  Graph Business Trip](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/35) |
+| PR '4' >  Graph Depth First | [PR '4' >  Graph Depth First](https://github.com/RihanFoudeh/data-structures-and-algorithms/pull/36) |
+
 
 
 ## Challenge
@@ -115,3 +117,26 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 * time: `O(n^2)`
 * space: `O(1)`
+
+
+# Challenge Summary - Graph Depth First
+<!-- Description of the challenge -->
+## Conduct a depth first preorder traversal on a graph
+
+### Feature Tasks
+
+#### Write the following method for the Graph class:
+
+* depth first
+* Arguments: Node (Starting point of search)
+* Return: A collection of nodes in their pre-order depth-first traversal order
+* Display the collection
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![graph-depth-first](assets/graph-depth-first.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* time: `O(n^2)`
+* space: `O(n)`
